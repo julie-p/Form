@@ -1,0 +1,105 @@
+/* Body */
+body {
+	font-family: 'Abhaya Libre', serif;
+	text-align: center;
+	background-color: #D8BFD8;
+	min-width: 320px;
+}
+
+/* Title */
+#title {
+	font-size: 40px;
+}
+/* Description */
+ p {
+	display: block;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 20px;
+}
+
+/* Form */
+
+#form-outer {
+	background-color: #F5F5F5;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding: 10px;
+	width: 75%;
+	max-width: 900px;
+	border-radius: 5px;
+}
+
+form {
+	display: block;
+	margin-top: 0em;
+
+}
+
+.labels {
+	display: inline-block;
+	text-align: right;
+	width: 40%;
+	padding: 5px;
+	margin-top: 10px;
+	vertical-align: top;
+}
+
+
+.right-tab {
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+	vertical-align: middle;
+}
+
+.input-field {
+	height: 20px;
+	max-width: 250px;
+	padding: 5px;
+	margin: 10px;
+	border-radius: 2px;
+	border: 1px solid #D3D3D3;
+}
+
+.dropdown {
+	height: 35px;
+	width: 140px;
+	padding: 5px;
+	margin: 10px;
+	margin-top: 15px;
+	border-radius: 2px;
+	border: 1px solid #D3D3D3;
+}
+
+.radio, .checkbox {
+	position: relative;
+	display: block;
+	padding-bottom: 10px;
+	margin-left: 10px;
+	left: -40px;
+}
+
+.partOf {
+	float: left;
+}
+
+.preferences {
+	float: left;
+	margin-right: 10px;
+}
+/* Submit Button */
+
+#submit {
+	background-color: #483D8B;
+	border-radius: 5px;
+	border: 0px solid;
+	color: white;
+	font-size: 1em;
+	margin: 10px;
+	height: 50px;
+	width: 100px;
+
+}

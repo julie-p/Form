@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
+    <title>Survey Form</title>
+  </head>
+  <body>
+  		
+  		<!--Title -->
+  	<h1 id="title">Witchcraft Survey Form</h1>
+  		
+  	
+  		<div id="form-outer">
+  			<p id="description">We want to know more about you !</p>
+  		<!-- Form -->
+  		<form id="survey-form" method="GET" >
+  			<div class="row-tab">
+  				<div class="labels">
+  					<label id="name-label" for=name">* Witch Name</label>
+  				</div>
+  				<div class="right-tab">
+  					<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your Witch name" required>
+  				</div>
+  			</div>
+			<div class="row-tab">
+  				<div class="labels">
+  					<label id="number-label" for="age">* Age</label>
+  				</div>
+  				<div class="right-tab">
+  					<input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age" required>
+  				</div>
+  			</div>
+  			<div class="row-tab">
+  				<div class="labels">
+  					<label id="email-label" for="email">* Email</label>
+  				</div>
+  				<div class="right-tab">
+  					<input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+  				</div>
+  			</div>
+  			<!-- Dropdown -->
+  			<div class="row-tab">
+  				<div class="labels">
+  					<label for="currentStat">* Which option best describes your Craft ? </label>
+  				</div>
+  				<div class="right-tab">
+  					<select id="dropdown" name="currentStat" class="dropdown">
+  						<option value>Select an option</option>
+  						<option value="wiccan">Wiccan</option>
+  						<option value="hedge">Hedge Witch</option>
+  						<option value="green">Green Witch</option>
+  						<option value="ceremonial">Ceremonial Witch</option>
+  						<option value="elemental">Elemental Witch</option>
+  						<option value="hereditary">Hereditary Witch</option>
+  						<option value="other">Other</option>
+  						<option value="preferNo">Prefer not to say</option>
+  					</select>
+  				</div>
+  			</div>
+  			<div class="row-tab">
+  				<div class="labels">
+  					<label for="partOf">* Are you part of a Coven ?</label>
+  				</div>
+  				<div class="right-tab">
+  					<ul style="list-style: none;">
+  						<li class="radio">
+  							<label>
+  								Yes
+  								<input type="radio" value="1" name="radio-buttons" class="partOf">
+  							</label>
+  						</li>
+  						<li class="radio">
+  							<label>
+  								No
+  								<input type="radio" value="2" name="radio-buttons" class="partOf">
+  							</label>
+  						</li>
+  						<li class="radio">
+  							<label>
+  								No but I would like to join one
+  								<input type="radio" value="1" name="radio-buttons" class="partOf">
+  							</label>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="rowTab">
+ 				<div class="labels">
+    				<label for="preferences">* What do you like most about your Craft ?<br>(multiple answers possible):</label>
+  				</div>
+  				<div class="right-tab">
+      				<ul id="preferences" style="list-style: none;">
+        				<li class="checkbox">
+        					<label>
+        						<input name="prefer" value="1" type="checkbox" class="userRatings">Casting Spells</input>
+        					</label>
+        				</li>
+       					 <li class="checkbox">
+       					 	<label>
+       					 		<input name="prefer" value="2" type="checkbox" class="userRatings">Rituals</input>
+       					 	</label>
+       					 </li>
+       					 <li class="checkbox">
+       					 	<label>
+       					 		<input name="prefer" value="3" type="checkbox" class="userRatings">Divination</input>
+       					 	</label>
+       					 </li>
+        				<li class="checkbox">
+        					<label>
+        						<input name="prefer" value="4" type="checkbox" class="userRatings">Being connected to the Earth</input>
+        					</label>
+        				</li>
+        				<li class="checkbox">
+        					<label>
+        						<input name="prefer" value="4" type="checkbox" class="userRatings">Astral Projection</input>
+        					</label>
+        				</li>
+        				<li class="checkbox">
+        					<label>
+        						<input name="prefer" value="4" type="checkbox" class="userRatings">Meditation</input>
+        					</label>
+        				</li>
+        				<li class="checkbox">
+        					<label>
+        						<input name="prefer" value="5" type="checkbox" class="userRatings">Other</input>
+        					</label>
+        				</li>
+      				</ul>
+				</div>
+			</div>
+  			<div class="row-tab">
+  				<div class="labels">
+  					<label for="familiar">* Do you have a familiar ? </label>
+  				</div>
+  				<div class="right-tab">
+  					<select id="dropdown" name="familiar" class="dropdown">
+  						<option value>Select an option</option>
+  						<option value="yes">Yes</option>
+  						<option value="no">No</option>
+  					</select>
+  				</div>
+  			</div>
+  			<div class="row-tab">
+  				<div class="labels">
+  					<label for="familiarInfo">* If so, what is your familiar ? </label>
+  				</div>
+  				<div class="right-tab">
+  					<textarea id="familiarInfo" class="input-field" style="height: 50px; resize: vertical;" name="familiarInfo" placeholder="Enter your familiar's name and type here..."></textarea>
+  				</div>
+  			</div>
+  			<div class="row-tab">
+  				<div class="labels">
+  					<label for="country">* Where do you live? </label>
+  				</div>
+  				<div class="right-tab">
+  					<textarea id="country" class="input-field" style="height: 50px; resize: vertical;" name="country" placeholder="Enter your country here..."></textarea>
+  				</div>
+  			</div>
+  			<div class="row-tab">
+  				<div class="labels">
+  					<label for="journey">* Tell us more about your Witchcraft Journey : </label>
+  				</div>
+  				<div class="right-tab">
+  					<textarea id="journey" class="input-field" style="height: 50px; resize: vertical;" name="journey" placeholder="Enter your text here..."></textarea>
+  				</div>
+  			</div>
+  			
+  		<!-- Submit Button-->
+  			<button id="submit" type="submit">Submit</button>
+	</form>
+  </body>
+  </html>
